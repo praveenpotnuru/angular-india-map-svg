@@ -1,27 +1,38 @@
-# AngularIndiaMapSvg
+# Angular SVG India Map
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+This package is used to generate US SVG Map and also giving ability to set callback function and some parameters to change fill & stocke color.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## How to install
 
-## Code scaffolding
+<pre>npm i angularindiasvgmap</pre>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Configuration
 
-## Build
+app.module.ts
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<pre>import {AngularindiasvgmapModule} from 'angularindiasvgmap';</pre>
 
-## Running unit tests
+You need to add this module in @NgModule(Imports). That's it.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Accessing Component
 
-## Running end-to-end tests
+<pre>&lt;india-map&gt;&lt;/india-map&gt;</pre>
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## API Reference
 
-## Further help
+### Inputs
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+|||
+|-|-|
+| `fillColor`      | Type: `string` Optional. Will change color of state name text. For Example: `fillColor="#C0C0C0"`       |
+| `fillStateColor` | Type: `string` Optional. Will change background color of state area. For Example: `fillStateColor="#C0C0C0"` |
+| `strokeColor`    | Type: `string` Optional. Will change border color of state area. For Example: `strokeColor="#C0C0C0"`     |
+| `fillHoverColor`    | Type: `string` Optional. Will change state color when mouse hover. For Example: `fillHoverColor="#C0C0C0"`     |
+
+### Output
+|||
+|-|-|
+| `onMapClick` | Will be emitted when state area has been clicked. It returns `state abbr`. (onMapClick) event. |
+
+Moreover, you can apply your own css to beautify this component.
