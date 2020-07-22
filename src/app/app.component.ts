@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-india-map-svg';
+  usMapClick($event){
+    console.log($event);
+  }
 }

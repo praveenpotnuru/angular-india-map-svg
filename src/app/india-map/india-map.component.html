@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+    <g>
+        <path *ngFor="let coordinate of coordinates;let i = index" [attr.id]="coordinate.id" [attr.d]="coordinate.d"
+            [attr.fill]="fillStateColor" [attr.stroke]="strokeColor" (click)="onIndiaMapClick(coordinate.id)"
+            style="cursor: pointer;" (mouseover)="onMapHover($event,coordinate.id)"
+            (mouseleave)="onMapLeave($event,coordinate.id)">
+        </path>
+    </g>
+</svg>
