@@ -1,0 +1,17 @@
+{
+  "name": "angularindiasvgmap",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.0.3",
+    "@angular/core": "^8.0.3"
+  },
+  "repository": {
+    "url": "https://github.com/praveenpotnuru/angular-india-map-svg.git"
+  },
+  "keywords": [
+    "svg",
+    "india",
+    "map",
+    "angular map"
+  ]
+}

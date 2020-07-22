@@ -119,6 +119,41 @@
           }
         }
       }
+    },
+    "angularindiasvgmap": {
+      "projectType": "library",
+      "root": "projects/angularindiasvgmap",
+      "sourceRoot": "projects/angularindiasvgmap/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angularindiasvgmap/tsconfig.lib.json",
+            "project": "projects/angularindiasvgmap/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angularindiasvgmap/src/test.ts",
+            "tsConfig": "projects/angularindiasvgmap/tsconfig.spec.json",
+            "karmaConfig": "projects/angularindiasvgmap/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angularindiasvgmap/tsconfig.lib.json",
+              "projects/angularindiasvgmap/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "angular-india-map-svg"
 }

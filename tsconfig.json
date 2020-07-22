@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "angularindiasvgmap": [
+        "dist/angularindiasvgmap"
+      ],
+      "angularindiasvgmap/*": [
+        "dist/angularindiasvgmap/*"
+      ]
+    }
   }
 }
