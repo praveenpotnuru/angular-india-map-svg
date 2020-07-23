@@ -1,6 +1,6 @@
 # Angular SVG India Map
 
-This package is used to generate US SVG Map and also giving ability to set callback function and some parameters to change fill & stocke color.
+This package is used to generate India SVG Map and also giving ability to set callback function and some parameters to change fill & stocke color.
 
 
 ## How to install
